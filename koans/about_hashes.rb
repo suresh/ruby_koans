@@ -41,7 +41,7 @@ class AboutHashes < EdgeCase::Koan
   def test_hash_keys_and_values
     hash = { :one => "uno", :two => "dos" }
 
-    assert_equal __, hash.keys.sort
+    assert_equal __, hash.keys.sort_by {|s| s.to_s}
     assert_equal __, hash.values.sort
   end
 
